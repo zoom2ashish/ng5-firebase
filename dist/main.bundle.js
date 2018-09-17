@@ -163,10 +163,6 @@ var AppModule = (function () {
 
 var routes = [
     {
-        path: '',
-        redirectTo: 'home'
-    },
-    {
         path: 'login',
         component: __WEBPACK_IMPORTED_MODULE_0__components_login_login_component__["a" /* LoginComponent */]
     },
@@ -176,7 +172,7 @@ var routes = [
         component: __WEBPACK_IMPORTED_MODULE_1__components_home_home_component__["a" /* HomeComponent */]
     },
     {
-        path: '*',
+        path: '',
         redirectTo: 'home',
         pathMatch: 'full'
     }
