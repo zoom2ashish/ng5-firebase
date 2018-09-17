@@ -273,7 +273,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, ":host {\n  width: 400px;\n  display: block;\n  height: 100%;\n  margin-left: auto;\n  margin-right: auto;\n  padding-top: 40px;\n  padding-bottom: 40px; }\n\n.btn-google-signin {\n  width: 382px;\n  height: 92px;\n  background: url(\"/assets/images/google-signin-button/btn_google_signin_dark_normal_web@2x.png\"); }\n\n.btn-google-signin:focus {\n  background: url(\"/assets/images/google-signin-button/btn_google_signin_dark_focus_web@2x.png\"); }\n\n.btn-google-signin[disabled] {\n  background: url(\"/assets/images/google-signin-button/btn_google_signin_dark_disabled_web@2x.png\"); }\n\n.btn-google-signin:active {\n  background: url(\"/assets/images/google-signin-button/btn_google_signin_dark_pressed_web@2x.png\"); }\n", ""]);
+exports.push([module.i, ":host {\n  width: 400px;\n  display: block;\n  height: 100%;\n  margin-left: auto;\n  margin-right: auto;\n  padding-top: 40px;\n  padding-bottom: 40px; }\n", ""]);
 
 // exports
 
