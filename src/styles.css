@@ -5,3 +5,22 @@ html, body {
   height: 100%;
   width: 100%;
 }
+
+
+.btn-google-signin {
+  width: 382px;
+  height: 92px;
+  background: url('assets/images/google-signin-button/btn_google_signin_dark_normal_web@2x.png')
+}
+
+.btn-google-signin:focus {
+  background: url('assets/images/google-signin-button/btn_google_signin_dark_focus_web@2x.png')
+}
+
+.btn-google-signin[disabled] {
+  background: url('assets/images/google-signin-button/btn_google_signin_dark_disabled_web@2x.png')
+}
+
+.btn-google-signin:active {
+  background: url('assets/images/google-signin-button/btn_google_signin_dark_pressed_web@2x.png')
+}

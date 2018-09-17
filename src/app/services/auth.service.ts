@@ -35,7 +35,7 @@ export class AuthService {
 
   doLogout() {
     return new Promise((resolve, reject) => {
-      if (auth().currentUser) {
+      if (this.afAuth.auth.currentUser) {
         this.afAuth.auth.signOut();
         resolve();
       } else {

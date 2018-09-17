@@ -14,7 +14,7 @@ export const routes: Route[] = [
     component: HomeComponent
   },
   {
-    path: '*',
+    path: '',
     redirectTo: 'home',
     pathMatch: 'full'
   }
