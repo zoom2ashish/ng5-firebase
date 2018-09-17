@@ -428,7 +428,7 @@ var AuthService = (function () {
     AuthService.prototype.doLogout = function () {
         var _this = this;
         return new Promise(function (resolve, reject) {
-            if (Object(__WEBPACK_IMPORTED_MODULE_1_firebase__["auth"])().currentUser) {
+            if (_this.afAuth.auth.currentUser) {
                 _this.afAuth.auth.signOut();
                 resolve();
             }
