@@ -131,7 +131,7 @@ var AppModule = (function () {
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
-                __WEBPACK_IMPORTED_MODULE_11__angular_router__["b" /* RouterModule */].forRoot(__WEBPACK_IMPORTED_MODULE_12__app_routes__["a" /* routes */]),
+                __WEBPACK_IMPORTED_MODULE_11__angular_router__["b" /* RouterModule */].forRoot(__WEBPACK_IMPORTED_MODULE_12__app_routes__["a" /* routes */], { useHash: true }),
                 __WEBPACK_IMPORTED_MODULE_2__angular_fire__["a" /* AngularFireModule */].initializeApp(__WEBPACK_IMPORTED_MODULE_6__environments_environment__["a" /* environment */].firebase),
                 __WEBPACK_IMPORTED_MODULE_3__angular_fire_firestore__["a" /* AngularFirestoreModule */],
                 __WEBPACK_IMPORTED_MODULE_4__angular_fire_auth__["b" /* AngularFireAuthModule */]
@@ -313,7 +313,7 @@ var LoginComponent = (function () {
     LoginComponent.prototype.doGoogleSignIn = function () {
         var _this = this;
         this.authService.doGoogleLogin().then(function (res) {
-            _this.router.navigate(['home']);
+            _this.router.navigate(['/home']);
         });
     };
     LoginComponent = __decorate([
@@ -361,7 +361,7 @@ var AuthGuard = (function () {
         if (this.authService.isLoggedIn) {
             return true;
         }
-        this.router.navigate(['login']);
+        this.router.navigate(['/login']);
     };
     AuthGuard = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
